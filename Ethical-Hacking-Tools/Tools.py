@@ -21,8 +21,9 @@ class Tools:
         for i in ipaddress:
             self.__scan_ip(i, port)
 
-            tags = f"\nPort {10 * ''} Service"
+            '''Final edition of tags print is yet to be finished'''
+            tags = f"\nPort"
             while len(self.open_ports) > 0:
                 print(tags)
                 tags = "\r"
-                print(f"{self.open_ports.pop(0)} {10 * ''} null")
+                print(f"{self.open_ports.pop(0)}")
